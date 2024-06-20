@@ -1,0 +1,150 @@
+/* TODO
+
+
+2. make it responsive
+
+
+
+4. There should be at least one slide that plays audio when clicked on. Be sure the user
+can tell which one – use a custom cursor, or put a hover effect on the slide such as
+changing the images’ opacity or size
+When the audio is playing, there should be a stop button that stops the audio. This
+button should show/hide itself depending on if music is playing
+
+
+5. There should be some care and attention given to the overall design and UX. Subtle
+hover effects, box shadows, CSS transitions, an H1 page title, nice background and
+good typography 
+
+
+
+*/
+
+body {
+    position: relative;
+    min-height: 100vh;
+    font-family: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin: 0;
+  
+    &::before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('../images/bg.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0.75;
+      z-index: -1;
+    }
+}
+
+h1{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-top: 20px;
+    font-size: 3rem;
+    /* padding: 10px; */
+}
+
+p{
+    text-align: center;
+}
+
+
+
+
+.audio_player {
+    cursor: help;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.swiper-container {
+    width: 750px;
+    padding-top: 50px;
+    padding-bottom: 50px; 
+}
+
+.swiper-slide{
+    width: 300px;
+
+    img {
+        width: 300px;
+    }
+
+    video {
+        /* height: 300px; */
+        width: 300px;
+        /* height: 450px; */
+    }
+    
+}
+
+
+/* .swiper-button-prev{
+    
+} */
+
+
+.swiper-button-prev, 
+.swiper-button-next {
+
+
+
+
+
+
+    width: 50px; /* Adjust width */
+    height: 50px; /* Adjust height */
+    background-color: #333; /* Background color */
+    color: #fff; /* Text color */
+
+    border-radius: 50%; /* Make it round */
+    opacity: 0.8; /* Opacity */
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+.swiper-button-prev:hover, .swiper-button-next:hover {
+    opacity: 1; /* Increase opacity on hover */
+}
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
